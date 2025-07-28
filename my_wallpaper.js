@@ -1,11 +1,12 @@
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 30;
+let mainEllipseWidth = 20;
+let mainEllipseHeight = 50;
+let smallEllipseWidth= 10;
 
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
-  //pWallpaper.output_mode(GRID_WALLPAPER);
+  // pWallpaper.output_mode(GRID_WALLPAPER);
   
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(true); //set this to false when you're ready to print
@@ -17,9 +18,76 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(240, 255, 240); //light honeydew green colour
+  background(100); 
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  rect(40 ,40, rect_width, rect_height);
+  angleMode(DEGREES);
+
+  // calc the angle to rotate
+  let angle = 360 / 12;
+  //move the origin to the centre  
+  push();
+  translate (100, 100);
+  //style flower
+  stroke(1);
+  fill(138, 67, 21);
+  //draw flower 
+  for (let i= 0; i < 10; i += 1) {
+    ellipse(0, 0, 100, smallEllipseWidth);
+    rotate(angle);
+  }
+  pop();
+
+
+
+
+  push();
+  translate (100, 100);
+
+  stroke(1);
+  fill(255, 50);
+  ellipse(0, 0, mainEllipseWidth, mainEllipseHeight);
+  rotate(angle);
+  ellipse(0, 0, mainEllipseWidth, mainEllipseHeight);
+  rotate(angle);
+  ellipse(0, 0, mainEllipseWidth, mainEllipseHeight);
+  rotate(angle);
+  ellipse(0, 0, mainEllipseWidth, mainEllipseHeight);
+  rotate(angle);
+  ellipse(0, 0, mainEllipseWidth, mainEllipseHeight);
+  rotate(angle);
+  ellipse(0, 0, mainEllipseWidth, mainEllipseHeight);
+  rotate(angle);
+  ellipse(0, 0, mainEllipseWidth, mainEllipseHeight);
+  rotate(angle);
+  // fill(255, 50);
+
+  // for (let i= 0; i < 7; i += 1) {
+  // ellipse(0, 0, 80, 50);
+  // rotate(angle);
+  // }
+ pop();
+
+
+  stroke(2);
+  fill(1);
+  //central ellipse
+  ellipse(100, 100, 5, 5);
+
+
+
+
+  stroke(1);
+  fill(1);
+  point()
+
+ 
+
+}
+
+function dots() {
+noStroke();
+
+
 }
