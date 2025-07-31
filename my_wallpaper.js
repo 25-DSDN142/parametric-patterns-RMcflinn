@@ -1,9 +1,9 @@
-let WhiteEllipseWidth = 90;
+let WhiteEllipseWidth = 70;
 let WhiteEllipseHeight = 30;
 let GoldFlowerWidth= 30;
-let GoldFlowerHeight = 100;
-  let crescentWidth = 20; //these variables change width of arc
-  let crescentWidth2 = 40; // sent to other cresenct 
+let GoldFlowerHeight = 80;
+let TallStarLine = 110;
+ 
 
 
 
@@ -21,10 +21,10 @@ function setup_wallpaper(pWallpaper) {
 }
 
 
-
+//--------------------THE MOTIF-----------------------
 
 function wallpaper_background() {
-  background(29, 26, 117); 
+  background(62, 109, 168); 
 }
 
 // The Inside Flower 
@@ -55,7 +55,6 @@ function my_symbol() {
   pop();
 
 
-
 //The InsyTinsyFlower
   push();
   translate (100, 100);
@@ -66,12 +65,7 @@ function my_symbol() {
     rotate(angle);
   }
   pop();
-
-
-
   
-   
-
 
 // Tall Star Lines
   angleMode(DEGREES);
@@ -79,10 +73,10 @@ function my_symbol() {
   push();
   translate (100, 100);
   noStroke();
-  fill(255, 217, 112, 70);
+  fill(255, 217, 100, 70);
   smooth();
   for (let i= 1; i < 3; i += 1) {
-    ellipse(0, 0, 150, 7);
+    ellipse(0, 0, TallStarLine, 7);
     rotate(angle2);
   }
   pop();
@@ -100,19 +94,7 @@ function my_symbol() {
     ellipse(0, 0, 100, 7);
     rotate(angle3);
   }
-  pop();
-
-
-  //The Outside Thick Lines 
-  //push();
-  //translate(100, 100);  // Consistent with others
-  //noStroke();
-  //fill(245, 155, 66, 100);
-  //for (let i = 0; i < 6; i++) {
-    //ellipse(90, 0, 5, 150);
-    //rotate(60);  // 360/6 = 60 degrees
-  //}
-  //pop();  
+  pop(); 
 
 
  //Lines moving outwards 
@@ -128,67 +110,176 @@ function my_symbol() {
   }
   pop();
 
+//---------------------------------------------
+
+//The Lines Outline 
+    //push();
+  //translate (100, 100);
+
+  //smooth();
+  //strokeWeight();
+  //fill(200, 50);
+  //for (let i= 0; i < 7; i += 1) {
+    //ellipse(0, 0, 200, 5);
+    //rotate(angle);
+  //}
+ //pop();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//The Flower Pattern Ideation 
+  
+//angleMode(DEGREES);
+ // let angle20 = 360/ 8; 
+  //push();
+  //translate (20, 50);
+  //noStroke();
+  //fill(255, 217, 112, 70);
+  //smooth();
+  //for (let i= 1; i < 6; i += 1) {
+   // ellipse(0, 0, WhiteEllipseWidth, WhiteEllipseHeight);
+   // rotate(angle20);
+  //}
+  //pop();
+
+//angleMode(DEGREES);
+    //let angle21 = 360/ 8; 
+  //push();
+  //translate (160, 185);
+  //noStroke();
+  //fill(255, 217, 112, 70);
+  //smooth();
+  //for (let i= 1; i < 6; i += 1) {
+  //  ellipse(0, 0, WhiteEllipseWidth, WhiteEllipseHeight);
+    //rotate(angle21);
+  //}
+ // pop();
+
+ //--------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+//--------------------The Clouds-----------------------
+
+
+
+   //The Outside Thick Lines 
+  //push();
+  //translate(100, 100);  // Consistent with others
+  //noStroke();
+  //fill(245, 155, 66, 100);
+  //for (let i = 0; i < 6; i++) {
+    //ellipse(90, 0, 5, 150);
+    //rotate(60);  // 360/6 = 60 degrees
+  //}
+  //pop(); 
+
 
 //Foreground Clouds
-  fill(255, 217, 112, 80);
-  noStroke();
-  ellipse(60, 50, 30, 30);
-  ellipse(50, 60, 30, 30);
-  ellipse(50, 50, 30, 30);
-  ellipse(30, 60, 30, 25);
-  ellipse(25, 70, 20, 15);
-  ellipse(40, 60, 35, 25);
+  //fill(255, 217, 112, 80);
+  //noStroke();
+  //ellipse(60, 50, 30, 30);
+  //ellipse(50, 60, 30, 30);
+  //ellipse(50, 50, 30, 30);
+  //ellipse(30, 60, 30, 25);
+  //ellipse(25, 70, 20, 15);
+  //ellipse(40, 60, 35, 25);
 
 
 
   //Inside SpiderMan Sun 
-  beginShape();
-  noFill();
-   vertex(29, 29);
-   strokeWeight(8);
-   stroke(255, 217, 112, 70);
-    quadraticVertex(100, 100, 100, 0);
-    quadraticVertex(100, 100, 171, 29);
-    quadraticVertex(100, 100, 200, 100);
-    quadraticVertex(100, 100, 171, 171);
-    quadraticVertex(100, 100, 100, 200);
-    quadraticVertex(100, 100, 29, 171);
-    quadraticVertex(100, 100, 0, 100);
-    quadraticVertex(100, 100, 29, 29);
-  endShape();
+  //beginShape();
+  //noFill();
+   //vertex(29, 29);
+   //strokeWeight(8);
+   //stroke(255, 217, 112, 70);
+    //quadraticVertex(100, 100, 100, 0);
+    //quadraticVertex(100, 100, 171, 29);
+    //quadraticVertex(100, 100, 200, 100);
+    //quadraticVertex(100, 100, 171, 171);
+    //quadraticVertex(100, 100, 100, 200);
+    //quadraticVertex(100, 100, 29, 171);
+    //quadraticVertex(100, 100, 0, 100);
+    //quadraticVertex(100, 100, 29, 29);
+  //endShape();
   //Outside SpiderMan Sun
-    beginShape();
-  noFill();
-   vertex(100, 0);
-   strokeWeight(3);
-   stroke(255, 217, 112, 70);
-    quadraticVertex(110, 45, 139, 7); //1
-    quadraticVertex(130, 50, 170, 30);  //2
-    quadraticVertex(145, 65, 190, 62);  //3
-    quadraticVertex(160, 85, 200, 100);  //4
-    quadraticVertex(145, 110, 193, 138); //5
-    quadraticVertex(140, 130, 170, 170); //6
-    quadraticVertex(130, 145, 139, 193); //7
-    quadraticVertex(110, 150, 100, 200);  //8
-    quadraticVertex(90, 150, 61, 193); //1
-    quadraticVertex(70, 145, 30, 170); //2
-    quadraticVertex(50, 130, 7, 139); //3
-    quadraticVertex(40, 110, 0, 100); //4
-    quadraticVertex(40, 85, 7, 61); //6
-    quadraticVertex(35, 65, 30, 30); //7
-    quadraticVertex(70, 55, 61, 7); //8
-    quadraticVertex(90, 45, 100, 0); //9   
-  endShape();
+    //beginShape();
+  //noFill();
+   //ertex(100, 0);
+   //strokeWeight(3);
+   //stroke(255, 217, 112, 70);
+   // quadraticVertex(110, 45, 139, 7); //1
+   // quadraticVertex(130, 50, 170, 30);  //2
+   // quadraticVertex(145, 65, 190, 62);  //3
+   // quadraticVertex(160, 85, 200, 100);  //4
+   // quadraticVertex(145, 110, 193, 138); //5
+   // quadraticVertex(140, 130, 170, 170); //6
+   // quadraticVertex(130, 145, 139, 193); //7
+   // quadraticVertex(110, 150, 100, 200);  //8
+   // quadraticVertex(90, 150, 61, 193); //1
+   // quadraticVertex(70, 145, 30, 170); //2
+   // quadraticVertex(50, 130, 7, 139); //3
+   // quadraticVertex(40, 110, 0, 100); //4
+   // quadraticVertex(40, 85, 7, 61); //6
+   // quadraticVertex(35, 65, 30, 30); //7
+   // quadraticVertex(70, 55, 61, 7); //8
+   // quadraticVertex(90, 45, 100, 0); //9   
+  //endShape();
 
 //BackGround Clouds
-  fill(255, 217, 112, 80);
-  noStroke();
-  ellipse(5, 190, 70, 60);
-  ellipse(0, 200, 100, 55);
-  ellipse(15, 15, 30, 25);
-  ellipse(2, 5, 70, 25);
-  ellipse(185, 5, 60, 40);
-  ellipse(10, 195, 50, 30);
+  //fill(255, 217, 112, 80);
+  //noStroke();
+  //ellipse(5, 190, 70, 60);
+  //ellipse(0, 200, 100, 55);
+  //ellipse(15, 15, 30, 25);
+  //ellipse(2, 5, 70, 25);
+  //ellipse(185, 5, 60, 40);
+  //ellipse(10, 195, 50, 30);
 
  
 
@@ -209,6 +300,7 @@ function my_symbol() {
 
 
 
+// A Brighter Star
   //smooth();
   //noStroke();
   //fill(255, 217, 112, 70);
@@ -250,36 +342,12 @@ function my_symbol() {
 
 
 
-//The Lines Outline 
-    //push();
-  //translate (100, 100);
 
-  //smooth();
-  //strokeWeight();
-  //fill(200, 50);
-  //for (let i= 0; i < 7; i += 1) {
-    //ellipse(0, 0, 200, 5);
-    //rotate(angle);
-  //}
- //pop();
 
  
   
-  //beginShape();
-  //noFill();
-   //vertex(29, 29);
-   //stroke(255, 217, 112, 70);
-    //quadraticVertex(100, 100, 100, 0);
-    //quadraticVertex(100, 100, 171, 29);
-    //quadraticVertex(100, 100, 200, 100);
-    //quadraticVertex(100, 100, 171, 171);
-    //quadraticVertex(100, 100, 100, 200);
-    //quadraticVertex(100, 100, 29, 171);
-    //quadraticVertex(100, 100, 0, 100);
-    //quadraticVertex(100, 100, 29, 29);
-  //endShape();
 
-
+//the orbs 
   //ellipseMode(CORNER);
   //fill(245, 156, 142, 50);
   //noFill();
@@ -288,27 +356,53 @@ function my_symbol() {
   //ellipse(0, 180, 20, 20);
   //ellipse(180, 0, 20, 20);
 
+//The Mandala Orbs
+  ellipseMode(CENTER);
+  stroke(255, 217, 112, 100);
 
-  //ellipseMode(CENTER);
-  //fill(255, 217, 112, 70);
-  //noFill();
-  //ellipse(100, 100, 200, 200);
-  //ellipse(100, 100, 150, 150);  
-  //ellipse(100, 100, 90, 90);
+  //The Central Ones
+   fill(245, 182, 66, 50);
+  ellipse(100, 100, 200, 200);
+   fill(247, 156, 59, 50);
+  ellipse(100, 100, 150, 150);
+   fill(247, 156, 59, 50)  
+  ellipse(100, 100, 90, 90);
 
-  //ellipse(127, 30, 10);
-  //ellipse(30, 127, 10);
-  //ellipse(170, 127, 10);
-  //ellipse(127, 170, 10);  
-  //ellipse(170, 73, 10);
-  //ellipse(73, 170, 10);
-  //ellipse(30, 73, 10);
-  //ellipse(73, 30, 10);
+  //The Small Ones
+  fill(196, 54, 35, 100);
+  ellipse(127, 30, 10);
+  ellipse(30, 127, 10);
+  ellipse(170, 127, 10);
+  ellipse(127, 170, 10);  
+  ellipse(170, 73, 10);
+  ellipse(73, 170, 10);
+  ellipse(30, 73, 10);
+  ellipse(73, 30, 10);
+
+  ellipse(83, 58, 10); 
+  ellipse(117, 58, 10);
+  ellipse(59, 83, 10);
+  ellipse(59, 118, 10);
+  ellipse(83, 142, 10);
+  ellipse(117, 142, 10);
+  ellipse(141, 118, 10);
+  ellipse(141, 83, 10);
+
+ 
+ 
+  
+  
+
+
+
+
+
+
+
+
+
     
-  //ellipse(30, 30, 10);
-  //ellipse(170, 30, 10);
-  //ellipse(30, 170, 10);
-  //ellipse(170, 170, 10);
+
 
 
 
