@@ -1,10 +1,9 @@
-let WhiteEllipseWidth = 20;
-let WhiteEllipseHeight = 45;
+let WhiteEllipseWidth = 40;
+let WhiteEllipseHeight = 100;
 let GoldFlowerWidth= 20;
-let GoldFlowerHeight = 100;
+let GoldFlowerHeight = 50;
 let TallStarLine = 200;
-let ShortStarLine = 100
- 
+let ShortStarLine = 100 
 
 
 
@@ -25,7 +24,7 @@ function setup_wallpaper(pWallpaper) {
 //--------------------THE MOTIF-----------------------
 
 function wallpaper_background() {
-  background(67, 69, 186); 
+  background(37, 35, 135); 
 }
 
 // The Inside Flower 
@@ -99,116 +98,126 @@ function my_symbol() {
 
 //---------------------------------------------
 
-//Brighter Shine 360 x 4
-    push();
-  translate (100, 100);
 
-  smooth();
-  strokeWeight();
-  fill(200, 50);
-  for (let i= 0; i < 7; i += 1) {
-    ellipse(0, 0, 200, 5);
-    rotate(angle);
-  }
- pop();
+/*beginShape();
+   vertex(50, 100);
+   fill();
+   strokeWeight(3);
+   stroke(255, 217, 112);
+   
+   
+
+   endShape();/*
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//----------The Bathroom Tile Pattern---------------------
+//Brighter Shine 360 x 4
+   // push();
+  //translate (100, 100);
+
+ // smooth();
+ // strokeWeight();
+ // fill(200, 50);
+ // for (let i= 0; i < 7; i += 1) {
+    //ellipse(0, 0, 200, 5);
+    //rotate(angle);
+//  }
+// pop();
 
   //Thin Lines moving outwards 
-  angleMode(DEGREES);
-  let angle4 = 360/16 ; 
-  push();
-  translate (100, 100);
-  strokeWeight(5)
-  stroke(255, 217, 112, 70);
-  for (let i= 0; i < 16; i +=1) {
-  line (100, 0, 0, 0);
-  rotate(angle4);
-  }
-  pop();
-
+ // angleMode(DEGREES);
+ // let angle4 = 360/16 ; 
+  //push();
+  //translate (100, 100);
+ // strokeWeight(5)
+ // stroke(255, 217, 112, 70);
+ // for (let i= 0; i < 16; i +=1) {
+ // line (100, 0, 0, 0);
+ // rotate(angle4);
+ // }
+  //pop();
+//
    //The Outside Thick Lines 
-  push();
-  translate(100, 100);  // Consistent with others
-  noStroke();
-  fill(255, 217, 112, 70);
-  for (let i = 0; i < 6; i++) {
-    ellipse(90, 0, 5, 150);
-    rotate(60);  // 360/6 = 60 degrees
-  }
-  pop(); 
-
+  //push();
+  //translate(100, 100);  // Consistent with others
+  //noStroke();
+  //fill(255, 217, 112, 70);
+  //for (let i = 0; i < 6; i++) {
+  //  ellipse(90, 0, 5, 150);
+  //  rotate(60);  // 360/6 = 60 degrees
+  //}
+ // pop(); 
+//
   //Inside SpiderMan Sun 
-  beginShape();
-  noFill();
-   vertex(29, 29);
-   strokeWeight(3);
-   fill(255, 217, 112, 70)
-   stroke(255, 217, 112, 70);
-    quadraticVertex(100, 100, 100, 0);
-    quadraticVertex(100, 100, 171, 29);
-    quadraticVertex(100, 100, 200, 100);
-    quadraticVertex(100, 100, 171, 171);
-    quadraticVertex(100, 100, 100, 200);
-    quadraticVertex(100, 100, 29, 171);
-    quadraticVertex(100, 100, 0, 100);
-    quadraticVertex(100, 100, 29, 29);
-  endShape();
+  ///beginShape();
+   //vertex(29, 29);
+   //strokeWeight(3);
+   //fill(255, 217, 112, 70)
+   //stroke(255, 217, 112, 70);
+    //quadraticVertex(100, 100, 100, 0);
+    //quadraticVertex(100, 100, 171, 29);
+    //quadraticVertex(100, 100, 200, 100);
+    //quadraticVertex(100, 100, 171, 171);
+    //quadraticVertex(100, 100, 100, 200);
+    //quadraticVertex(100, 100, 29, 171);
+    //quadraticVertex(100, 100, 0, 100);
+    //quadraticVertex(100, 100, 29, 29);
+  //endShape();
  
 //Grid Lines 
-stroke(255, 217, 112, 120);
-  line(50, 0, 50, 200);
-  line(150, 0, 150, 200);
-  line(0, 50, 200, 50);
-  line(0, 150, 200, 150);
+//stroke(255, 217, 112, 120);
+  //line(50, 0, 50, 200);
+  //line(150, 0, 150, 200);
+  //line(0, 50, 200, 50);
+  //line(0, 150, 200, 150);
 
 //Corner Tiles
-strokeWeight(4);
-stroke(255, 217, 112, 140)
-  line(140, 0, 200, 35);
-  line(0, 35, 60, 0);
-  line(55, 200, 0, 170);
-  line(200, 170, 150, 200);
-  line(200, 0, 175, 15);
-  line(10, 200, 30, 188);
+//strokeWeight(4);
+//stroke(255, 217, 112, 140)
+  //line(140, 0, 200, 35);
+  //line(0, 35, 60, 0);
+  //line(55, 200, 0, 170);
+ // line(200, 170, 150, 200);
+ // line(200, 0, 175, 15);
+ // line(10, 200, 30, 188);
 
-   //The Small Ones
-  fill(196, 54, 35, 100);
-  ellipse(127, 30, 10);
-  ellipse(30, 127, 10);
-  ellipse(170, 127, 10);
-  ellipse(127, 170, 10);  
-  ellipse(170, 73, 10);
-  ellipse(73, 170, 10);
-  ellipse(30, 73, 10);
-  ellipse(73, 30, 10);
+  ///The Small Ones
+  //fill(196, 54, 35, 100);
+  //ellipse(127, 30, 10);
+  //ellipse(30, 127, 10);
+  //ellipse(170, 127, 10);
+  //ellipse(127, 170, 10);  
+  //ellipse(170, 73, 10);
+  //ellipse(73, 170, 10);
+  //ellipse(30, 73, 10);
+  //ellipse(73, 30, 10);///
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//-------------------------------------------------------
 
 
 
@@ -231,22 +240,22 @@ stroke(255, 217, 112, 140)
   //for (let i= 1; i < 6; i += 1) {
     //ellipse(0, 0, GoldFlowerWidth, GoldFlowerHeight);
     //rotate(angle21);
- // }
- // pop();
+ //}
+  //pop();
 
   //The White
 //angleMode(DEGREES);
   //let angle20 = 360/ 8; 
- // push();
- // translate (0, 50);
- // noStroke();
- // fill(200, 50);
- // smooth();
- // for (let i= 1; i < 6; i += 1) {
- //   ellipse(0, 0, WhiteEllipseWidth, WhiteEllipseHeight);
- //   rotate(angle20);
- // }
- // pop();
+  //push();
+  //translate (0, 50);
+  //noStroke();
+  //fill(200, 50);
+  //smooth();
+  //for (let i= 1; i < 6; i += 1) {
+    //ellipse(0, 0, WhiteEllipseWidth, WhiteEllipseHeight);
+    //rotate(angle20);
+  //}
+  //pop();
 
 
 
@@ -254,7 +263,7 @@ stroke(255, 217, 112, 140)
   //push();
   //translate (0, 50);
   //noStroke();
-  ///fill(255, 217, 100, 50);
+  //fill(255, 217, 100, 50);
  //for (let i= 1; i < 5; i += 1) {
     //ellipse(0, 0, 30, 10);
     //rotate(angle);
@@ -266,25 +275,25 @@ stroke(255, 217, 112, 140)
   //angleMode(DEGREES);
   //let angle30 = 360/ 8; 
   //push();
-  //translate (0, 50);
+  ///translate (0, 50);
   //noStroke();
   //fill(135, 35, 67, 70);
   //smooth();
-  ///for (let i= 4; i < 8; i += 1) {
-  //  ellipse(0, 0, ShortStarLine, 9);
-  //  rotate(angle30);
+  //for (let i= 4; i < 8; i += 1) {
+  //ellipse(0, 0, ShortStarLine, 9);
+    //rotate(angle30);
   //}
   //pop(); 
 
- //Flower Leaf and Stem 
+ 
   //noStroke();
-  //fill(255, 217, 100, 190);
+  //fill(255, 217, 100, 150);
   //ellipse(0, 50, 7);
 
-  
+  //Flower Leaf and Stem 
   //strokeWeight(4);
   //stroke(63, 110, 70);
-  //fill(63, 110, 30, 120);
+  //fill(63, 110, 30);
   //bezier(105, 180, 105, 125, 195, 135, 105, 180);
   //ellipse(100, 200, 5, 97)
 
@@ -292,11 +301,11 @@ stroke(255, 217, 112, 140)
   //ellipse(0, 150, 5, 97);
 
   //stroke(135, 35, 67, 70)
- // fill(255, 217, 100, 50)
- // ellipse(90, 20, 20, 10)
+  //fill(255, 217, 100, 50)
+  //ellipse(90, 20, 20, 10)
  // ellipse(90, 20, 10, 20)
- // ellipse(160, 170, 10, 20)
- // ellipse(160, 170, 20, 10)
+  //ellipse(160, 170, 10, 20)
+  //ellipse(160, 170, 20, 10)
 
  //--------------------------------------------------------
 
@@ -375,60 +384,7 @@ stroke(255, 217, 112, 140)
   //ellipse(185, 5, 60, 40);
   //ellipse(10, 195, 50, 30);
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-// THE MANDALA ORBS --------------------------------
+ // THE MANDALA ORBS --------------------------------
 
 //The Mandala Orbs
   //ellipseMode(CENTER);
@@ -461,6 +417,14 @@ stroke(255, 217, 112, 140)
   //ellipse(117, 142, 10);
   //ellipse(141, 118, 10);
   //ellipse(141, 83, 10);
+
+
+
+
+
+
+
+
 
  
  //-----------------------------------------------
