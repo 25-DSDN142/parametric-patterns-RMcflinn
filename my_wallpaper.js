@@ -1,8 +1,9 @@
-let WhiteEllipseWidth = 70;
-let WhiteEllipseHeight = 30;
-let GoldFlowerWidth= 30;
-let GoldFlowerHeight = 80;
-let TallStarLine = 110;
+let WhiteEllipseWidth = 20;
+let WhiteEllipseHeight = 45;
+let GoldFlowerWidth= 20;
+let GoldFlowerHeight = 100;
+let TallStarLine = 200;
+let ShortStarLine = 100
  
 
 
@@ -24,7 +25,7 @@ function setup_wallpaper(pWallpaper) {
 //--------------------THE MOTIF-----------------------
 
 function wallpaper_background() {
-  background(62, 109, 168); 
+  background(67, 69, 186); 
 }
 
 // The Inside Flower 
@@ -91,18 +92,32 @@ function my_symbol() {
   fill(255, 217, 112, 70);
   smooth();
   for (let i= 4; i < 8; i += 1) {
-    ellipse(0, 0, 100, 7);
+    ellipse(0, 0, ShortStarLine, 7);
     rotate(angle3);
   }
   pop(); 
 
+//---------------------------------------------
 
- //Lines moving outwards 
+//Brighter Shine 360 x 4
+    push();
+  translate (100, 100);
+
+  smooth();
+  strokeWeight();
+  fill(200, 50);
+  for (let i= 0; i < 7; i += 1) {
+    ellipse(0, 0, 200, 5);
+    rotate(angle);
+  }
+ pop();
+
+  //Thin Lines moving outwards 
   angleMode(DEGREES);
   let angle4 = 360/16 ; 
   push();
   translate (100, 100);
-
+  strokeWeight(5)
   stroke(255, 217, 112, 70);
   for (let i= 0; i < 16; i +=1) {
   line (100, 0, 0, 0);
@@ -110,86 +125,178 @@ function my_symbol() {
   }
   pop();
 
-//---------------------------------------------
+   //The Outside Thick Lines 
+  push();
+  translate(100, 100);  // Consistent with others
+  noStroke();
+  fill(255, 217, 112, 70);
+  for (let i = 0; i < 6; i++) {
+    ellipse(90, 0, 5, 150);
+    rotate(60);  // 360/6 = 60 degrees
+  }
+  pop(); 
 
-//The Lines Outline 
-    //push();
-  //translate (100, 100);
+  //Inside SpiderMan Sun 
+  beginShape();
+  noFill();
+   vertex(29, 29);
+   strokeWeight(3);
+   fill(255, 217, 112, 70)
+   stroke(255, 217, 112, 70);
+    quadraticVertex(100, 100, 100, 0);
+    quadraticVertex(100, 100, 171, 29);
+    quadraticVertex(100, 100, 200, 100);
+    quadraticVertex(100, 100, 171, 171);
+    quadraticVertex(100, 100, 100, 200);
+    quadraticVertex(100, 100, 29, 171);
+    quadraticVertex(100, 100, 0, 100);
+    quadraticVertex(100, 100, 29, 29);
+  endShape();
+ 
+//Grid Lines 
+stroke(255, 217, 112, 120);
+  line(50, 0, 50, 200);
+  line(150, 0, 150, 200);
+  line(0, 50, 200, 50);
+  line(0, 150, 200, 150);
 
-  //smooth();
-  //strokeWeight();
-  //fill(200, 50);
-  //for (let i= 0; i < 7; i += 1) {
-    //ellipse(0, 0, 200, 5);
-    //rotate(angle);
-  //}
- //pop();
+//Corner Tiles
+strokeWeight(4);
+stroke(255, 217, 112, 140)
+  line(140, 0, 200, 35);
+  line(0, 35, 60, 0);
+  line(55, 200, 0, 170);
+  line(200, 170, 150, 200);
+  line(200, 0, 175, 15);
+  line(10, 200, 30, 188);
 
+   //The Small Ones
+  fill(196, 54, 35, 100);
+  ellipse(127, 30, 10);
+  ellipse(30, 127, 10);
+  ellipse(170, 127, 10);
+  ellipse(127, 170, 10);  
+  ellipse(170, 73, 10);
+  ellipse(73, 170, 10);
+  ellipse(30, 73, 10);
+  ellipse(73, 30, 10);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//The Flower Pattern Ideation 
   
-//angleMode(DEGREES);
- // let angle20 = 360/ 8; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//The Flower Pattern Ideation ------------------------
+  //The Gold 
+ //angleMode(DEGREES);
+    //let angle21 = 360/ 8; 
   //push();
-  //translate (20, 50);
+  //translate (0, 50);
   //noStroke();
-  //fill(255, 217, 112, 70);
+  //fill(133, 70, 3, 130);
   //smooth();
   //for (let i= 1; i < 6; i += 1) {
-   // ellipse(0, 0, WhiteEllipseWidth, WhiteEllipseHeight);
-   // rotate(angle20);
+    //ellipse(0, 0, GoldFlowerWidth, GoldFlowerHeight);
+    //rotate(angle21);
+ // }
+ // pop();
+
+  //The White
+//angleMode(DEGREES);
+  //let angle20 = 360/ 8; 
+ // push();
+ // translate (0, 50);
+ // noStroke();
+ // fill(200, 50);
+ // smooth();
+ // for (let i= 1; i < 6; i += 1) {
+ //   ellipse(0, 0, WhiteEllipseWidth, WhiteEllipseHeight);
+ //   rotate(angle20);
+ // }
+ // pop();
+
+
+
+  //The InsyTinsyFlower
+  //push();
+  //translate (0, 50);
+  //noStroke();
+  ///fill(255, 217, 100, 50);
+ //for (let i= 1; i < 5; i += 1) {
+    //ellipse(0, 0, 30, 10);
+    //rotate(angle);
   //}
   //pop();
 
-//angleMode(DEGREES);
-    //let angle21 = 360/ 8; 
+
+   // The Short Star Lines
+  //angleMode(DEGREES);
+  //let angle30 = 360/ 8; 
   //push();
-  //translate (160, 185);
+  //translate (0, 50);
   //noStroke();
-  //fill(255, 217, 112, 70);
+  //fill(135, 35, 67, 70);
   //smooth();
-  //for (let i= 1; i < 6; i += 1) {
-  //  ellipse(0, 0, WhiteEllipseWidth, WhiteEllipseHeight);
-    //rotate(angle21);
+  ///for (let i= 4; i < 8; i += 1) {
+  //  ellipse(0, 0, ShortStarLine, 9);
+  //  rotate(angle30);
   //}
- // pop();
+  //pop(); 
+
+ //Flower Leaf and Stem 
+  //noStroke();
+  //fill(255, 217, 100, 190);
+  //ellipse(0, 50, 7);
+
+  
+  //strokeWeight(4);
+  //stroke(63, 110, 70);
+  //fill(63, 110, 30, 120);
+  //bezier(105, 180, 105, 125, 195, 135, 105, 180);
+  //ellipse(100, 200, 5, 97)
+
+  //bezier(0, 135, 15, 65, 95, 95, 0, 130);
+  //ellipse(0, 150, 5, 97);
+
+  //stroke(135, 35, 67, 70)
+ // fill(255, 217, 100, 50)
+ // ellipse(90, 20, 20, 10)
+ // ellipse(90, 20, 10, 20)
+ // ellipse(160, 170, 10, 20)
+ // ellipse(160, 170, 20, 10)
 
  //--------------------------------------------------------
 
@@ -205,19 +312,6 @@ function my_symbol() {
 
 
 //--------------------The Clouds-----------------------
-
-
-
-   //The Outside Thick Lines 
-  //push();
-  //translate(100, 100);  // Consistent with others
-  //noStroke();
-  //fill(245, 155, 66, 100);
-  //for (let i = 0; i < 6; i++) {
-    //ellipse(90, 0, 5, 150);
-    //rotate(60);  // 360/6 = 60 degrees
-  //}
-  //pop(); 
 
 
 //Foreground Clouds
@@ -298,9 +392,80 @@ function my_symbol() {
 
 
 
+  
+
+  
 
 
-// A Brighter Star
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+// THE MANDALA ORBS --------------------------------
+
+//The Mandala Orbs
+  //ellipseMode(CENTER);
+  //stroke(255, 217, 112, 100);
+
+  //The Central Ones
+   //fill(245, 182, 66, 50);
+  //ellipse(100, 100, 200, 200);
+   //fill(247, 156, 59, 50);
+  //ellipse(100, 100, 150, 150);
+   //fill(247, 156, 59, 50)  
+  //ellipse(100, 100, 90, 90);
+
+  //The Small Ones
+  //fill(196, 54, 35, 100);
+  //ellipse(127, 30, 10);
+  //ellipse(30, 127, 10);
+  //ellipse(170, 127, 10);
+  //ellipse(127, 170, 10);  
+  //ellipse(170, 73, 10);
+  //ellipse(73, 170, 10);
+  //ellipse(30, 73, 10);
+  //ellipse(73, 30, 10);
+
+  //ellipse(83, 58, 10); 
+  //ellipse(117, 58, 10);
+  //ellipse(59, 83, 10);
+  //ellipse(59, 118, 10);
+  //ellipse(83, 142, 10);
+  //ellipse(117, 142, 10);
+  //ellipse(141, 118, 10);
+  //ellipse(141, 83, 10);
+
+ 
+ //-----------------------------------------------
+  
+  // A Brighter Star
   //smooth();
   //noStroke();
   //fill(255, 217, 112, 70);
@@ -309,138 +474,22 @@ function my_symbol() {
   //ellipse(100, 100, 20, 100);
   //ellipse(100, 100, 75, 20);
 
-  
-
-  
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-  
-
-//the orbs 
+  //the corner orbs 
   //ellipseMode(CORNER);
   //fill(245, 156, 142, 50);
-  //noFill();
   //ellipse(0, 0, 20, 20);
-  //ellipse(180, 180, 20, 20);
+  ///ellipse(180, 180, 20, 20);
   //ellipse(0, 180, 20, 20);
   //ellipse(180, 0, 20, 20);
 
-//The Mandala Orbs
-  ellipseMode(CENTER);
-  stroke(255, 217, 112, 100);
-
-  //The Central Ones
-   fill(245, 182, 66, 50);
-  ellipse(100, 100, 200, 200);
-   fill(247, 156, 59, 50);
-  ellipse(100, 100, 150, 150);
-   fill(247, 156, 59, 50)  
-  ellipse(100, 100, 90, 90);
-
-  //The Small Ones
-  fill(196, 54, 35, 100);
-  ellipse(127, 30, 10);
-  ellipse(30, 127, 10);
-  ellipse(170, 127, 10);
-  ellipse(127, 170, 10);  
-  ellipse(170, 73, 10);
-  ellipse(73, 170, 10);
-  ellipse(30, 73, 10);
-  ellipse(73, 30, 10);
-
-  ellipse(83, 58, 10); 
-  ellipse(117, 58, 10);
-  ellipse(59, 83, 10);
-  ellipse(59, 118, 10);
-  ellipse(83, 142, 10);
-  ellipse(117, 142, 10);
-  ellipse(141, 118, 10);
-  ellipse(141, 83, 10);
-
- 
- 
-  
-  
 
 
 
 
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //stroke(2);
-  //fill(1);
-  //central ellipse
-  //ellipse(100, 100, 5, 5);
 
   //ellipseMode(CORNER);
   //noFill();
@@ -449,9 +498,9 @@ function my_symbol() {
   //ellipse(20, 20, 40, 40);
 
   //ellipseMode(CORNER);
-  //noFill();
+ // noFill();
   //strokeWeight(0.25);
-  //stroke(200);
+ // stroke(200);
   //ellipse(145, 145, 20, 20);
 
 
