@@ -98,18 +98,48 @@ function my_symbol() {
 
 //---------------------------------------------
 
+//Foreground Clouds
+  fill(252, 231, 172, 80);
+  noStroke();
+  ellipse(60, 50, 30, 30);
+  ellipse(50, 60, 30, 30);
+  ellipse(50, 50, 30, 30);
+  ellipse(30, 60, 30, 25);
+  ellipse(25, 70, 20, 15);
+  ellipse(40, 60, 35, 25);
 
-/*beginShape();
-   vertex(50, 100);
-   fill();
-   strokeWeight(3);
-   stroke(255, 217, 112);
-   
-   
+//BackGround Clouds
+  fill(252, 231, 172, 60);
+  ellipse(5, 190, 70, 60);
+  ellipse(0, 200, 100, 55);
+  ellipse(15, 15, 30, 25);
+  ellipse(2, 5, 70, 25);
+  ellipse(185, 5, 60, 40);
+  ellipse(10, 195, 50, 30);
 
-   endShape();/*
+//More Clouds 
+  fill(255, 217, 112, 40);
+  ellipse(140, 130, 80, 35);
+  ellipse(140, 130, 80, 35);
+  ellipse(70, 145, 20, 17);
+  ellipse(165, 120, 30, 15);
+  ellipse(120, 140, 70, 35);
+  ellipse(120, 140, 70, 35);
+  ellipse(100, 140, 60, 30);
+  ellipse(100, 140, 60, 30);
+  ellipse(140, 153, 50, 10);
+  
 
-    
+  ellipse(20, 140, 30, 15);
+  ellipse(27, 135, 15, 15);
+
+  ellipse(10, 195, 50, 30);
+  
+
+
+
+
+  
 
 
 
@@ -473,11 +503,9 @@ function my_symbol() {
 
 
 
+
+
 }
-  
-
-
-
 
 
 
@@ -487,9 +515,6 @@ function my_symbol() {
   
 
  
-
-
-
 
 
 
