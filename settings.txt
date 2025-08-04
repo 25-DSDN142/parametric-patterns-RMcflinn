@@ -9,14 +9,23 @@ Your final settings.txt will look something like this when you are finished:
 
 Wallpaper 1:
 
-//your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+//Extra Parameters
+let BackGroundPattern = 0; 
+let BackgroundColour = 3;
+let Clouds = 0; 
+let SpidermanShape = 0; 
+let SmallOrbs = 0;
+let Flowers = 2;
+let BrightenTheStar = 0;
+
+
+//Motif Parameters 
+let WhiteEllipseWidth = 30; 
+let WhiteEllipseHeight = 70;
+let GoldFlowerWidth= 30;
+let GoldFlowerHeight = 80;
+let TallStarLine = 50;
+let ShortStarLine = 50;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -33,14 +42,23 @@ function setup_wallpaper(pWallpaper) {
 
 Wallpaper 2:
 
-//your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+//Extra Parameters
+let BackGroundPattern = 2; 
+let BackgroundColour = 3;
+let Clouds = 0; 
+let SpidermanShape = 2; 
+let SmallOrbs = 2;
+let Flowers = 1;
+let BrightenTheStar = 0;
+
+
+//Motif Parameters 
+let WhiteEllipseWidth = 30; 
+let WhiteEllipseHeight = 70;
+let GoldFlowerWidth= 30;
+let GoldFlowerHeight = 80;
+let TallStarLine = 50;
+let ShortStarLine = 50;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -52,3 +70,236 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.grid_settings.cell_height = 100;
   pWallpaper.grid_settings.row_offset  = 0;
 }
+
+/////////////////////////////////
+
+Wallpaper 3:
+
+//Extra Parameters
+let BackGroundPattern = 0; 
+let BackgroundColour = 2;
+let Clouds = 2; 
+let SpidermanShape = 2; 
+let SmallOrbs = 0;
+let Flowers = 0;
+let BrightenTheStar = 1;
+
+
+//Motif Parameters 
+let WhiteEllipseWidth = 15; 
+let WhiteEllipseHeight = 60;
+let GoldFlowerWidth= 20;
+let GoldFlowerHeight = 100;
+let TallStarLine = 200;
+let ShortStarLine = 100;
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 0;
+
+}
+
+/////////////////////////////////
+
+Wallpaper 4:
+
+//Extra Parameters
+let BackGroundPattern = 3; 
+let BackgroundColour = 1;
+let Clouds = 1; 
+let SpidermanShape = 0; 
+let SmallOrbs = 3;
+let Flowers = 0;
+let BrightenTheStar = 2;
+
+
+//Motif Parameters 
+let WhiteEllipseWidth = 35; 
+let WhiteEllipseHeight = 80;
+let GoldFlowerWidth= 40;
+let GoldFlowerHeight = 90;
+let TallStarLine = 70;
+let ShortStarLine = 70;
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+///////////////////////////////////////////////
+
+Wallpaper 5:
+
+//Extra Parameters
+let BackGroundPattern = 2; 
+let BackgroundColour = 2;
+let Clouds = 3; 
+let SpidermanShape = 0; 
+let SmallOrbs = 2;
+let Flowers = 0;
+let BrightenTheStar = 1;
+
+
+//Motif Parameters 
+let WhiteEllipseWidth = 25; 
+let WhiteEllipseHeight = 65;
+let GoldFlowerWidth= 0;
+let GoldFlowerHeight = 80;
+let TallStarLine = 100;
+let ShortStarLine = 50;
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+////////////////////////////////////////////
+
+
+Wallpaper 6:
+
+//Extra Parameters
+let BackGroundPattern = 3; 
+let BackgroundColour = 2;
+let Clouds = 0; 
+let SpidermanShape = 0; 
+let SmallOrbs = 3;
+let Flowers = 1;
+let BrightenTheStar = 1;
+
+
+//Motif Parameters 
+let WhiteEllipseWidth = 25; 
+let WhiteEllipseHeight = 65;
+let GoldFlowerWidth= 0;
+let GoldFlowerHeight = 80;
+let TallStarLine = 100;
+let ShortStarLine = 50;
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+///////////////////////////////////
+
+Wallpaper 7:
+
+//Extra Parameters
+let BackGroundPattern = 1; 
+let BackgroundColour = 1;
+let Clouds = 1; 
+let SpidermanShape = 1; 
+let SmallOrbs = 1;
+let Flowers = 0;
+let BrightenTheStar = 2
+
+
+//Motif Parameters 
+let WhiteEllipseWidth = 20; 
+let WhiteEllipseHeight = 95;
+let GoldFlowerWidth= 30;
+let GoldFlowerHeight = 100;
+let TallStarLine = 200;
+let ShortStarLine = 200;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+///////////////////////////////////
+
+Wallpaper 8:
+
+//Extra Parameters
+let BackGroundPattern = 2; 
+let BackgroundColour = 1;
+let Clouds = 3; 
+let SpidermanShape = 1;
+let SmallOrbs = 2;
+let Flowers = 0;
+let BrightenTheStar = 2
+
+
+//Motif Parameters 
+let WhiteEllipseWidth = 20; 
+let WhiteEllipseHeight = 105;
+let GoldFlowerWidth= 10;
+let GoldFlowerHeight = 70;
+let TallStarLine = 150;
+let ShortStarLine = 150;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+///////////////////////////////////
+
+Wallpaper 9:
+
+//Extra Parameters
+let BackGroundPattern = 2; 
+let BackgroundColour = 3;
+let Clouds = 3; 
+let SpidermanShape = 1;
+let SmallOrbs = 1;
+let Flowers = 0;
+let BrightenTheStar = 0
+
+
+//Motif Parameters 
+let WhiteEllipseWidth = 20; 
+let WhiteEllipseHeight = 45;
+let GoldFlowerWidth= 20;
+let GoldFlowerHeight = 90;
+let TallStarLine = 40;
+let ShortStarLine = 40;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+///////////////////////////////////
