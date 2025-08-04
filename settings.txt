@@ -275,22 +275,22 @@ function setup_wallpaper(pWallpaper) {
 Wallpaper 9:
 
 //Extra Parameters
-let BackGroundPattern = 2; 
+let BackGroundPattern = 3; 
 let BackgroundColour = 3;
 let Clouds = 3; 
 let SpidermanShape = 1;
-let SmallOrbs = 1;
+let SmallOrbs = 3;
 let Flowers = 0;
-let BrightenTheStar = 0
+let BrightenTheStar = 2
 
 
 //Motif Parameters 
-let WhiteEllipseWidth = 20; 
-let WhiteEllipseHeight = 45;
-let GoldFlowerWidth= 20;
-let GoldFlowerHeight = 90;
-let TallStarLine = 40;
-let ShortStarLine = 40;
+let WhiteEllipseWidth = 10; 
+let WhiteEllipseHeight = 105;
+let GoldFlowerWidth= 40;
+let GoldFlowerHeight = 50;
+let TallStarLine = 150;
+let ShortStarLine = 150;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);

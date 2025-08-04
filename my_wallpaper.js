@@ -1,3 +1,7 @@
+
+//GitHub UserName: RMcflinn
+
+//Extra Parameters
 //Extra Parameters
 let BackGroundPattern = 2; 
 let BackgroundColour = 1;
@@ -15,6 +19,7 @@ let GoldFlowerWidth= 10;
 let GoldFlowerHeight = 70;
 let TallStarLine = 150;
 let ShortStarLine = 150;
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
